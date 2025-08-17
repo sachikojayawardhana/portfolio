@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachiko Jayawardana | UI-UX Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    header { background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 100px 0; text-align: center; }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.2rem; }
+    section { padding: 60px 0; }
+    .project-card { transition: transform 0.3s ease; }
+    .project-card:hover { transform: translateY(-10px); }
+    footer { background: #222; color: white; padding: 20px 0; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sachiko Jayawardana</h1>
+    <h3>UI/UX Engineer | BICT Undergraduate</h3>
+    <p>Designing seamless digital experiences that connect users with technology.</p>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>I am a UI/UX Engineer and a 1st-year BICT undergraduate at Rajarata University of Sri Lanka. I specialize in user-centered design, focusing on creating responsive, accessible, and visually appealing interfaces. My goal is to build digital products that are easy to use, efficient, and enjoyable.</p>
+        <ul>
+          <li>User Interface Design</li>
+          <li>User Research & Usability Testing</li>
+          <li>Prototyping (Figma, Adobe XD)</li>
+          <li>Human-Computer Interaction (HCI)</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://via.placeholder.com/400x300" class="img-fluid rounded shadow" alt="Sachiko profile">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Weather & Task Scheduling Web App</h5>
+              <p class="card-text">Designed a web app that schedules tasks based on real-time weather updates.</p>
+              <p><strong>Technologies:</strong> Figma, HTML, CSS, JS</p>
+              <a href="#" class="btn btn-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Mobile App Redesign</h5>
+              <p class="card-text">Redesigned an e-commerce app interface for better navigation and user flow.</p>
+              <p><strong>Technologies:</strong> Adobe XD, React, Tailwind CSS</p>
+              <a href="#" class="btn btn-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Personal Portfolio Website</h5>
+              <p class="card-text">Designed and developed a responsive personal portfolio with a clean UI and smooth transitions.</p>
+              <p><strong>Technologies:</strong> HTML, CSS, JS, Bootstrap</p>
+              <a href="#" class="btn btn-primary btn-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Frontend</h5>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Design Tools</h5>
+        <p>Figma, Adobe XD, Photoshop, Canva</p>
+      </div>
+      <div class="col-md-4">
+        <h5>UX Skills</h5>
+        <p>Wireframing, Prototyping, Usability Testing, Accessibility</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form class="mx-auto" style="max-width:600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div class="text-center mt-4">
+        <p>📧 sachiko@example.com | 🔗 <a href="#" target="_blank">LinkedIn</a> | 💻 <a href="#" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sachiko Jayawardana | UI/UX Engineer</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
