@@ -6,8 +6,8 @@ body {
     background-color: rgb(16, 17, 51);
 }
 header { 
-    background: linear-gradient(to right, #2b387f, #2c5d9a); 
-    color: rgb(247, 246, 246); padding: 100px 0; text-align: center; 
+    background: linear-gradient(to right, #2c5d9a, #89d2dc); 
+    color: rgb(230, 224, 224); padding: 100px 0; text-align: center; 
 }
 header h1 { 
     font-size: 3rem;
@@ -20,6 +20,17 @@ section {
      padding: 60px 0; 
     }
     
+/* About Me Section */
+#about p {
+  font-size: 18px;     /* increase normal text size */
+  line-height: 1.8;    /* add spacing between lines */
+}
+
+#about h2 {
+  font-size: 32px;     /* bigger section heading */
+  font-weight: bold;
+}
+
 .project-card {
   border: none;
   border-radius: 15px;
@@ -105,6 +116,33 @@ background: #0c0d38;
 color: white;
 }
 
+/* Profile Picture Animation */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  animation: bounceIn 2s ease; /* initial load animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.profile-pic:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Keyframes for bounce-in effect */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 
