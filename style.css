@@ -33,9 +33,9 @@ section {
   font-size: 18px;     /* increase normal text size */
   line-height: 1.8;    /* add spacing between lines */
 }
-#about img {
-
-  margin-left: 1000px;
+.image-container img {
+  width: 150px;
+  height: 100px;
 }
 
 #about h2 {
