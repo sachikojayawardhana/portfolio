@@ -1,17 +1,25 @@
-
-
 body { 
     font-family: 'Segoe UI', sans-serif;
     color: rgb(228, 233, 237);
     background-color: rgb(16, 17, 51);
 }
+ul {
+color: #fcfeff;
+}
 header { 
     background: linear-gradient(to right, #2c5d9a, #89d2dc); 
-    color: rgb(230, 224, 224); padding: 100px 0; text-align: center; 
+    color: rgb(255, 255, 255); padding: 100px 0; text-align: center; 
 }
 header h1 { 
     font-size: 3rem;
  }
+
+ /* Navbar font color */
+.navbar-dark .navbar-nav .nav-link {
+  color: #f0f0f0;  /* light gray by default */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
 header p { 
     font-size: 1.2rem; 
@@ -25,9 +33,26 @@ section {
   font-size: 18px;     /* increase normal text size */
   line-height: 1.8;    /* add spacing between lines */
 }
+#about img {
+
+  margin-left: 1000px;
+}
 
 #about h2 {
   font-size: 32px;     /* bigger section heading */
+  font-weight: bold;
+}
+.button-container {
+  text-align: right;
+  margin: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
@@ -144,5 +169,146 @@ color: white;
     transform: scale(1);
   }
 }
+
+/* Button Group Styles */
+.button-group .btn {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+/* GitHub Button */
+.btn-github {
+  background-color: #24292f;
+  color: #fff;
+}
+.btn-github:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* LinkedIn Button */
+.btn-linkedin {
+  background-color: #0a66c2;
+  color: #fff;
+}
+.btn-linkedin:hover {
+  background-color: #004182;
+  color: #fff;
+}
+/* facebook Button */
+.btn-facebook {
+  background-color: #396294;
+  color: #fff;
+}
+.btn-facebook:hover {
+  background-color: #6d5ece;
+  color: #fff;
+}
+
+/* Progress Bars */
+.progress {
+  height: 22px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+.progress-bar {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+/* Custom text-based tool icons */
+.tool-box {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+/* Container for tools */
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;              /* allows two lines */
+  justify-content: center;      /* center items */
+  gap: 20px;                    /* spacing between cards */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each tool card */
+.tool-card {
+  width: 120px;
+  height: 120px;
+  background: #1e293b;          /* dark slate */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(48, 159, 207, 0.5);
+}
+
+/* Icon styling */
+.tool-card i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #1717c5;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tool-card:hover i {
+  transform: scale(1.2);
+  color: #ffd700;
+}
+
+/* Label styling */
+.tool-card span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2575fc; /* highlight on hover */
+}
+
+#tools i {
+  color: #2575fc;
+  margin-bottom: 10px;
+}
+
+/* Move About section buttons slightly right */
+#about .button-group {
+  text-align: left;     /* align buttons to left first */
+  margin-left: 30px;    /* shift buttons right */
+}
+#about .button-group .btn {
+  margin-bottom: 10px;  /* add spacing if stacked */
+}
+
+
+
 
 
